@@ -7,10 +7,11 @@ https://github.com/Kingsford-Group/bloomtree
 Setup
 -----
 
-Built the fake data (genome-a.fa, genome-b.fa, reads-a.fa, reads-b.fa) from
-instructions at https://github.com/dib-lab/2015-khmer-wok4-multimap
+Build the fake data (genome-a.fa, genome-b.fa, reads-a.fa, reads-b.fa) from
+instructions at https://github.com/dib-lab/2015-khmer-wok4-multimap, taking
+all output reads (so coverage of ~100).
 
-Made a third fake genome (genome-c.fa) with:
+Make a third fake genome (genome-c.fa) with:
 
 ../nullgraph/make-random-genome.py -l 1000 -s 3 --name='genomeC' > genome-c.fa
 
@@ -27,6 +28,6 @@ Then, build a query from genomes A and C::
 
 Run the query::
 
-   bt query 
+   bt query -t 0.8 c_entire.bf.bv query.in query.out
 
 CTB 5/30/15
