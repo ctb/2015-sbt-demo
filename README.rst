@@ -13,7 +13,7 @@ all output reads (so coverage of ~100).
 
 Make a third fake genome (genome-c.fa) with:
 
-../nullgraph/make-random-genome.py -l 1000 -s 3 --name='genomeC' > genome-c.fa
+    ../nullgraph/make-random-genome.py -l 1000 -s 3 --name='genomeC' > genome-c.fa
 
 Execution
 ---------
